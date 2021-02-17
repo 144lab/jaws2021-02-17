@@ -1,0 +1,56 @@
+body {
+  overflow-y: hidden;
+  font-size: 32px !important;
+}
+
+.slide code {
+  color: rgb(141, 9, 119);
+  font-weight: bold;
+  background: none;
+}
+
+.title {
+  color: rgb(40, 120, 200);
+}
+
+.slide {
+  break-after: page;
+}
+
+.slide strong {
+  color: #850000;
+}
+
+.slide table {
+  display: inline-block;
+  margin-bottom: 0.5em;
+}
+
+.slide#page1:target ~ canvas#output {
+  left: 50%;
+  width: 450px;
+  height: 300px;
+  transform: translate(-50%, 0%);
+}
+
+.slide#page1:not(target) ~ canvas#output {
+  left: 0%;
+}
+
+canvas#output {
+  position: fixed;
+  bottom: 0;
+}
+
+video#video {
+  display: none;
+}
+
+img {
+  max-width: 100%;
+  max-height: 75vh;
+}
+
+.note {
+  display: none;
+}
